@@ -87,7 +87,7 @@ form button:hover{
   box-shadow: none;
 }
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 600px){
   .contact-form{
      width: 100%;
      display: flex;
