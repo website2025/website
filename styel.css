@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'popins' sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(23, 12%, 4%);
+}
+
+.contact h2{
+  font-size: 40px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact form{
+  width: 600px;
+  text-align: center;
+}
+
+form .input-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box .input-field{
+  width: 48.5%;
+}
+
+.field .item{
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: 2px solid hsl(23, 100%, 50%);
+  outline: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: hsl(23, 4%, 60%);
+  margin: 12px 0;
+}
+
+.field .item::placeholder{
+  color: rgba(255, 255, 255, .3);
+}
+
+.field .error-txt{
+  font-size: 14.5px;
+  color: #d93025;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+form .textarea-field .item{
+  resize: none;
+}
+
+form .textarea-field .error-txt{
+  margin-top: -10px;
+}
+
+form button{
+  padding: 12px 32px;
+  background: hsl(23, 100%, 50%);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px hsl(23, 100%, 50%);
+  color: hsl(23, 4%, 60%);
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: .5s;
+}
+
+form button:hover{
+  box-shadow: none;
+}
+
+@media screen and (max-width: 340px){
+  .contact-form{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+  .input-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
